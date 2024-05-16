@@ -15,5 +15,5 @@ menu.addEventListener("click",function(){
     sidebar.style.left=0;
 })
 close.addEventListener("click",function(){
-    sidebar.style.left="-50%";
+    sidebar.style.left="-60%";
 })

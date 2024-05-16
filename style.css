@@ -116,7 +116,7 @@ font-size: 13px;
 @media screen and (max-width: 768px) {
     
     #offer{
-        font-size: 12px;
+        font-size: 8px;
     }
     #nav__items{
         display:none;
@@ -124,8 +124,17 @@ font-size: 13px;
     #nav__menu{
       display:flex;
     }
+    #nav__title h1{
+        font-size: 23px;
+    }
     #hero__items h1{
-        font-size: 20px;
+        font-size: 15px;
+    }
+    #hero__items p{
+        font-size: 15px;
+    }
+    #hero__items button{
+        font-size: 10px;
     }
 }
 
