@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <title>Nostra</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--TailWind Css-->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <!--Stylesheet-->
+    <link rel="stylesheet" href="style.css">
+    
+     
+</head>
+
+<body>
+    <!--Offers-->
+    <div class="p-1 flex justify-center items-center text-gray-300 gap-20" id="offer">
+        <p>Sign Up and <strong class="font-semibold">GET 20% OFF</strong> for your first Order</p>
+        <P class="font-semibold cursor-pointer  flex justify-center" id="close">x</P>
+    </div>
+    <!--Navbar-->
+    <div id="nav" class="flex justify-between mt-2 items-center">
+        <div class="font-bold" id="nav__title">
+            <h1>Nostra</h1>
+        </div>
+        <div id="nav__menu" class="cursor-pointer">
+            <svg  xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-8 h-8">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+              </svg>
+              
+        </div>
+        <div id="nav__items">
+            <ul class="flex gap-8 ">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">New Arrival</a></li>
+                <li><a href="#">Most Wanted</a></li>
+                <li><a href="#">Collections</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+
+    </div>
+    <!-- Side Bar -->
+    <div id="nav__sidebar" class="bg-gray-700 h-screen z-20 text-gray-100 absolute top-0 w-56 cursor-pointer" style="left:-50%;transition: 1.5s;">
+      <p class=" font-semibold cursor-pointer ml-48 mt-3 cursor-pointer" id="nav__close">X</p>
+      <ul class="flex flex-col gap-4 px-5">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">New Arrival</a></li>
+          <li><a href="#">Most Wanted</a></li>
+          <li><a href="#">Collections</a></li>
+          <li><a href="#">Contact Us</a></li>
+      </ul>
+  </div>
+    <!--Image Section-->
+        <div id="hero__section" class="">
+        <div id="hero__image" class="relative">
+            <img src="./images/hero_image1.jpg" width="100%" id="image" class="mt-2">
+           
+            
+           </div>
+           <div id="hero__items" class="flex flex-col justify-center items-center">
+            <h1 class="text-gray-100  font-extrabold">Level Up Your Style With Our</h1>
+            <p class="text-gray-100 mt-3 font-bold">Summer Collections</p>
+            <button class=" bg-gray-100 px-6 py-2 rounded mt-3  text-black">Shop Now →</button>
+        </div>
+        </div>
+        
+    
+    
+    
+
+
+
+    <script src="index.js"></script>
+</body>
+
+</html>
