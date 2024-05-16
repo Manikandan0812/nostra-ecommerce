@@ -125,16 +125,16 @@ font-size: 13px;
       display:flex;
     }
     #nav__title h1{
-        font-size: 23px;
+        font-size: 20px;
     }
     #hero__items h1{
-        font-size: 15px;
+        font-size: 10px;
     }
     #hero__items p{
-        font-size: 15px;
+        font-size: 10px;
     }
     #hero__items button{
-        font-size: 10px;
+        font-size: 7px;
     }
 }
 
