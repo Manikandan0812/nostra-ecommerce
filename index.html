@@ -3,15 +3,14 @@
 
 <head>
     <meta charset="UTF-8">
-    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
     <title>Nostra</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!--TailWind Css-->
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <!--Stylesheet-->
-    <link rel="stylesheet" href="style.css">
-    
-     
+    <link rel="stylesheet" href="./Home/style.css">
+
+
 </head>
 
 <body>
@@ -21,15 +20,16 @@
         <P class="font-semibold cursor-pointer  flex justify-center" id="close">x</P>
     </div>
     <!--Navbar-->
-    <div id="nav" class="flex justify-between mt-2 items-center">
+    <div id="nav" class="flex justify-between mt-2 items-center z-10">
         <div class="font-bold" id="nav__title">
             <h1>Nostra</h1>
         </div>
         <div id="nav__menu" class="cursor-pointer">
-            <svg  xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-8 h-8">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="currentColor" class="w-8 h-8">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
-              </svg>
-              
+            </svg>
+
         </div>
         <div id="nav__items">
             <ul class="flex gap-8 ">
@@ -43,37 +43,125 @@
 
     </div>
     <!-- Side Bar -->
-    <div id="nav__sidebar" class="bg-gray-700 h-screen z-20 text-gray-100 absolute top-0 w-56 cursor-pointer" style="left:-70%;transition: 1.5s;">
-      <p class=" font-semibold cursor-pointer ml-48 mt-3 cursor-pointer" id="nav__close">X</p>
-      <ul class="flex flex-col gap-4 px-5">
-          <li><a href="#">Home</a></li>
-          <li><a href="#">New Arrival</a></li>
-          <li><a href="#">Most Wanted</a></li>
-          <li><a href="#">Collections</a></li>
-          <li><a href="#">Contact Us</a></li>
-      </ul>
-  </div>
+    <div id="nav__sidebar" class="bg-gray-700 h-screen z-20 text-gray-100 absolute top-0 w-56 cursor-pointer"
+        style="left:-70%;transition: 1.5s;">
+        <p class=" font-semibold cursor-pointer text-right m-2" id="nav__close">X</p>
+        <ul class="flex flex-col gap-4 px-5">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">New Arrival</a></li>
+            <li><a href="#">Most Wanted</a></li>
+            <li><a href="#">Collections</a></li>
+            <li><a href="#">Contact Us</a></li>
+        </ul>
+    </div>
     <!--Image Section-->
-        <div id="hero__section" class="">
-        <div id="hero__image" class="relative">
-            <img src="./images/hero_image1.jpg" width="100%" id="image" class="mt-2">
-           
-            
-           </div>
-           <div id="hero__items" class="flex flex-col justify-center items-center">
-            <h1 class="text-gray-100  font-extrabold">Level Up Your Style With Our</h1>
-            <p class="text-gray-100 mt-3 font-bold">Summer Collections</p>
-            <button class=" bg-gray-100 px-6 py-2 rounded mt-3  text-black">Shop Now →</button>
+    <div class="relative m-2">
+
+        <ul class="" id="slider">
+            <li class="h-[50vh] relative">
+                <img src="./images/hero_image1.jpg" class="w-full h-full object-cover rounded">
+                <div class="absolute top-0 left-0 w-full h-full flex" id="hero__items">
+                    <div class="my-auto w-full text-center  text-gray-200">
+                        <p class="px-14 py-1 font-extrabold text-6xl md:text-4xl">Level Up Your Style With Our</p>
+                        <p class="px-14 py-1 font-bold text-2xl">Summer Collections</p>
+                        <button class="border px-5 py-1 bg-gray-300 text-black rounded mt-2">Shop Now →</button>
+                    </div>
+
+                </div>
+            </li>
+            <li class="h-[50vh] relative hidden">
+                <img src="./images/hero_image2.jpg" class="w-full h-full object-cover rounded">
+                <div class="absolute top-0 left-0 w-full h-full flex" id="hero__items">
+                    <div class="my-auto w-full text-center  text-gray-200">
+                        <p class="px-14 py-1 font-extrabold text-6xl">Level Up Your Style With Our</p>
+                        <p class="px-14 py-1 font-bold text-2xl">Summer Collections</p>
+                        <button class="border px-5 py-1 bg-gray-300 text-black rounded mt-2">Shop Now →</button>
+                    </div>
+
+                </div>
+            </li>
+            <li class="h-[50vh] relative hidden">
+                <img src="./images/hero_image3.jpg" class="w-full h-full object-cover rounded">
+                <div class="absolute top-0 left-0 w-full h-full flex" id="hero__items">
+                    <div class="my-auto w-full text-center  text-gray-200">
+                        <p class="px-14 py-1 font-extrabold text-6xl">Level Up Your Style With Our</p>
+                        <p class="px-14 py-1 font-bold text-2xl">Summer Collections</p>
+                        <button class="border px-5 py-1 bg-gray-300 text-black rounded mt-2">Shop Now →</button>
+                    </div>
+
+                </div>
+            </li>
+
+        </ul>
+
+        <div class="absolute top-0 left-0  h-full w-full flex ">
+            <div class="my-auto w-full flex justify-between items-center ">
+                <button class="text-white" onclick="prev()">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5"
+                        stroke="currentColor" class="w-16 h-16">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5 8.25 12l7.5-7.5" />
+                    </svg>
+
+                </button>
+                <button class="text-white " onclick="next()">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5"
+                        stroke="currentColor" class="w-16 h-16 ">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
+                    </svg>
+
+                </button>
+            </div>
         </div>
+    </div>
+    <!--Brands-->
+    <section class="m-2 mt-6">
+        <div id="brand__title">
+         <p class="font-bold text-4xl">Brands</p>
         </div>
+        <div class="flex justify-between  items-center mt-6 " id="brand__desc">
+         <div class="flex flex-col  items-center text-center gap-3" id="brand__items" >
+            <img src="./images/brandlogo-behance.png" width="60px" height="30px">
+            <p class="text-3xl">Puma</p>
+         </div>
+         <div class="flex flex-col  items-center text-center gap-4" id="brand__items">
+            <img src="./images/brandlogo-adidas.png" width="60px" height="30px">
+            <p class="text-3xl">Adidas</p>
+         </div>
+         <div class="flex flex-col  items-center text-center gap-4" id="brand__items">
+            <img src="./images/brandlogo-leaves.png" width="60px" height="30px">
+            <p class="text-3xl">Leaves</p>
+         </div>
+         <div class="flex flex-col  items-center gap-4 text-center" id="brand__items">
+            <img src="./images/brandlogo-simple.png" width="60px" height="30px">
+            <p class="text-3xl">Simple</p>
+         </div>
+         <div class="flex flex-col  items-center text-center gap-4" id="brand__items">
+            <img src="./images/brandlogo-twitch.png" width="60px" height="30px">
+            <p class="text-3xl">Twitch</p>
+         </div>
+         <div class="flex flex-col  items-center text-center gap-4" id="brand__items">
+            <img src="./images/brandlogo-behance.png" width="60px" height="30px">
+            <p class="text-3xl">Puma</p>
+         </div>
+         <div class="flex flex-col  items-center text-center gap-4" id="brand__items">
+            <img src="./images/brandlogo-adidas.png" width="60px" height="30px">
+            <p class="text-3xl">Adidas</p>
+         </div>
+         
+         </div>
+         
+       
         
-    
-    
-    
+    </section>
 
 
 
-    <script src="index.js"></script>
+
+
+
+
+
+    <script src="./Home/index.js"></script>
 </body>
 
 </html>
