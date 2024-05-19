@@ -45,6 +45,11 @@ body{
   }
 /* IMAGE SECTION */
 
+/* New Arrivals */
+#new__arrivals__title p{
+    font-size: 30px;
+}
+
 
 
 
@@ -155,6 +160,28 @@ body{
         height:20px;
         padding: 2px;
     }
+    /* New Arrival Items */
+    #new__arrivals{
+        margin-top: 10px;
+        margin:5px;
+    }
+    #new__arrivals__items{
+        margin-top: 0px;
+    }
+    #new__arrivals__desc{
+        margin-top: 8px;
+    }
+    #new__arrivals__title p{
+        font-size: 10px;
+    }
+    #new__arrivals__items__img img {
+        width:80px;
+    }
+    #new__arrivals__items__button button{
+        padding: 4px;
+        font-size: 8px;
+        border-radius: 3px;
+    }
   }
   
   /* Styles for tablets (768px to 991px) */
@@ -211,6 +238,28 @@ body{
         width:30px;
         height:30px;
         padding: 2px;
+    }
+    /* New Arrival Items */
+    #new__arrivals{
+        margin-top: 15px;
+        margin:8px;
+    }
+    #new__arrivals__items{
+        margin-top: 0px;
+    }
+    #new__arrivals__desc{
+        margin-top: 10px;
+    }
+    #new__arrivals__title p{
+        font-size: 25px;
+    }
+    #new__arrivals__items__img img {
+        width:150px;
+    }
+    #new__arrivals__items__button button{
+        padding: 8px;
+        font-size: 12px;
+        border-radius: 5px;
     }
     
   }
