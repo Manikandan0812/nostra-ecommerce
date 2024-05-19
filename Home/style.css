@@ -49,6 +49,19 @@ body{
 #new__arrivals__title p{
     font-size: 30px;
 }
+/* sale section */
+#sale__section__items h1{
+    font-size: 40px;
+    
+}
+#sale__section__items p{
+    font-size: 30px;
+    
+}
+#sale__section__items button{
+    font-size: 20px;
+    
+}
 
 
 
@@ -182,6 +195,34 @@ body{
         font-size: 8px;
         border-radius: 3px;
     }
+    /* Sale Section */
+    #sale__section{
+        padding:0px 0px;
+        padding: 5px;
+        gap:10px;
+    }
+    #sale__section__image{
+
+    }
+    #sale__section__image img{
+       width:200px;
+    }
+    #sale__section__items p{
+        font-size: 10px;
+        margin-top: 2px;
+    }
+    #sale__section__items h1{
+        font-size: 10px;
+        
+    }
+    #sale__section__items button{
+        margin-top: 2px;
+        padding:0px 0px;
+        padding: 3px;
+        font-size: 10px;
+        border-radius: 4px;
+    }
+    
   }
   
   /* Styles for tablets (768px to 991px) */
@@ -260,6 +301,19 @@ body{
         padding: 8px;
         font-size: 12px;
         border-radius: 5px;
+    }
+    /* Sale Section */
+    #sale__section__items h1{
+        font-size: 30px;
+        
+    }
+    #sale__section__items p{
+        font-size: 15px;
+        
+    }
+    #sale__section__items button{
+        font-size: 15px;
+        
     }
     
   }
