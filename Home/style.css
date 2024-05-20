@@ -22,6 +22,7 @@ body{
     top:0;
     background-color: white;
     padding:5px 18px;
+    width:100%;
 }
 #nav__title{
     font-size: 30px;
@@ -85,7 +86,26 @@ body{
 #footer__icons i{
     font-size: 30px;
 }
+/* Collection items */
+/* collection */
+ #collections{
+    margin:15px;
+    gap:5px;
+}
+#collection__s1{
+    margin-left:10px;
+}
+#collection__s1 label{
+    font-size: 20px;
+}
+#collection__s1__checkbox h1 {
+    font-size: 30px;
+    
+}
+#collection__s1__checkbox {
+    font-size: 20px;
 
+}
 
 
 
@@ -278,9 +298,56 @@ body{
 #footer__icons i{
     font-size: 15px;
 }
+ /* collection */
+ #collections{
+    margin:5px;
+    gap:5px;
+    padding: 4px;
+}
+#collection__s1{
+    margin-left:5px;
+}
+#collection__s1 label{
+    font-size: 10px;
+}
+#collection__s1__checkbox h1 {
+    font-size: 12px;
     
+}
+#collection__s1__checkbox {
+    font-size: 10px;
+    margin-top:8px ;
+
+}
+#collection__s2{
+
+}
+ #collection__s2__seachbar{
+   padding:2px;
+ }
+ #collection__s2__items{
+    gap:10px;
+ }
+ #collection__s2__items__shirts img{
+    width:75px;
+ }  
+ #collection__s2__items__shirts h1{
+    font-size: 8px;
+    padding-top: 2px;
+    line-height: 15px;
+ } 
+ #collection__s2__items__shirts p{
+    font-size: 8px;
+    padding-top: 2px;
+    line-height: 15px;
+ } 
   }
   
+
+
+
+
+
   /* Styles for tablets (768px to 991px) */
   @media only screen and (min-width: 768px) and (max-width: 991px) {
     #nav__items{
@@ -395,6 +462,49 @@ body{
     #footer__icons i{
         font-size: 25px;
     }
+    /* collection */
+    #collections{
+    margin:5px;
+    gap:5px;
+    padding: 5px;
+}
+#collection__s1{
+    margin-left:5px;
+}
+#collection__s1 label{
+    font-size: 15px;
+}
+#collection__s1__checkbox h1 {
+    font-size: 20px;
+    
+}
+#collection__s1__checkbox {
+    font-size: 15px;
+    margin-top:8px ;
+
+}
+#collection__s2{
+
+}
+ #collection__s2__seachbar{
+   padding:3px;
+ }
+ #collection__s2__items{
+    gap:15px;
+ }
+ #collection__s2__items__shirts img{
+    width:170px;
+ }  
+ #collection__s2__items__shirts h1{
+    font-size: 14px;
+    padding-top: 2px;
+    line-height: 15px;
+ } 
+ #collection__s2__items__shirts p{
+    font-size: 12px;
+    padding-top: 2px;
+    line-height: 15px;
+ }
     
   }
   

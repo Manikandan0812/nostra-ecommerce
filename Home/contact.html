@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <!--TailWind Css-->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <!--Stylesheet-->
+    <link rel="stylesheet" href="./style.css">
+    <!--Font Awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+    <!--Offers-->
+    <div class="p-1 flex justify-center items-center text-gray-300 gap-20" id="offer">
+        <p>Sign Up and <strong class="font-semibold">GET 20% OFF</strong> for your first Order</p>
+        <P class="font-semibold cursor-pointer  flex justify-center" id="close">x</P>
+    </div>
+    <!--Navbar-->
+    <div id="nav" class="flex justify-between mt-2 items-center z-10">
+        <div class="font-bold" id="nav__title">
+            <h1>Nostra</h1>
+        </div>
+        <div id="nav__menu" class="cursor-pointer">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="currentColor" class="w-8 h-8">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+            </svg>
+
+        </div>
+        <div id="nav__items">
+            <ul class="flex gap-8 ">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">New Arrival</a></li>
+                <li><a href="#">Most Wanted</a></li>
+                <li><a href="./collection.html">Collections</a></li>
+                <li><a href="./contact.html">Contact Us</a></li>
+            </ul>
+        </div>
+
+    </div>
+    <!-- Side Bar -->
+    <div id="nav__sidebar" class="bg-gray-700  z-20 text-gray-100 absolute top-0 w-56 cursor-pointer "
+        style="left:-70%;transition: 1.5s;height: 200vh;">
+        <p class=" font-semibold cursor-pointer text-right m-2" id="nav__close">X</p>
+        <ul class="flex flex-col  gap-4 px-5">
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="">New Arrival</a></li>
+            <li><a href="#">Most Wanted</a></li>
+            <li><a href="./collection.html">Collections</a></li>
+            <li><a href="./contact.html">Contact Us</a></li>
+        </ul>
+    </div> 
+     <!--Contact-->
+     <section class="bg-white dark:bg-gray-900  mt-5 m-3">
+        <div class="py-8 bg-gray-900 rounded-lg text-white lg:py-16 px-4 mx-auto max-w-screen-md">
+            <h2 class="mb-4 text-2xl tracking-tight font-extrabold  dark:text-white">Contact Us</h2>
+            <form action="#" class="space-y-8">
+                <div>
+                    <label for="email" class="block mb-2 text-sm font-medium  dark:text-gray-300">Name</label>
+                    <input type="text" id="email" class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light" placeholder="enter your name" required>
+                </div>
+                <div>
+                    <label for="subject" class="block mb-2 text-sm font-medium  dark:text-gray-300">Email</label>
+                    <input type="email" id="subject" class="block p-3 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 shadow-sm focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light" placeholder="enter your email" required>
+                </div>
+                <div class="sm:col-span-2">
+                    <label for="message" class="block mb-2 text-sm font-medium dark:text-gray-400">Your message</label>
+                    <textarea id="message" rows="6" class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg shadow-sm border border-gray-300 focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="Leave a comment..."></textarea>
+                </div>
+                <button type="submit" class="py-3 px-5 text-sm font-medium text-center text-white rounded-lg bg-blue-800 sm:w-fit hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800">Submit</button>
+            </form>
+        </div>
+      </section>
+
+
+
+
+
+
+
+     <!--Footer-->
+     <section class="mt-10" id="footer">
+        <div class="bg-gray-900 w-full p-8 text-white flex flex-col gap-5" id="footer__items">
+            <h1 class="font-extrabold">Nostra</h1>
+            <p>The Standard chunk of Lorem ipsum used since the 1500s is reprodused below for those interest</p>
+            <div class="flex gap-10" id="footer__icons">
+                <i class="fa-brands fa-instagram" style="color:white;"></i>
+                <i class="fa-brands fa-twitter" style="color:white;;"></i>
+                <i class="fa-brands fa-facebook" style="color: white;"></i>
+            </div>
+            <p>&copy; 2023 Nostra.com</p>
+        </div>
+    </section>
+    <script src="index.js"></script>
+</body>
+</html>
