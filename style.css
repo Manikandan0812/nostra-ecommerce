@@ -10,6 +10,9 @@
 body{
     font-family: "Poppins", sans-serif;  
 }
+html{
+    scroll-behavior: smooth;
+}
 /* OFFER */
 #offer{
     background-color: #1D232c;
@@ -109,8 +112,11 @@ body{
 #collection__s2{
     width:75%;
 }
+.collection__s2__items__shirts{
+    flex-grow: 1;
+ }
 
-
+ 
 
 
 
@@ -335,6 +341,9 @@ body{
  .collection__s2__items{
     gap:10px;
  }
+ .collection__s2__items__shirts{
+    flex-grow: 1;
+ }
  .collection__s2__items__shirts img{
     width:75px;
  }  
@@ -502,6 +511,9 @@ body{
  }
  .collection__s2__items{
     gap:15px;
+ }
+ .collection__s2__items__shirts{
+    flex-grow: 1;
  }
  .collection__s2__items__shirts img{
     width:170px;

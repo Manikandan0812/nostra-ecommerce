@@ -28,7 +28,8 @@ var collectionList=collection.querySelectorAll(".collection__s2__items__shirts")
 
 search.addEventListener("keyup",function(event){
     var enterdValue=event.target.value.toUpperCase();
-
+    
 })
+
 
 
