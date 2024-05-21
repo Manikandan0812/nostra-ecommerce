@@ -332,18 +332,18 @@ body{
  #collection__s2__seachbar{
    padding:2px;
  }
- #collection__s2__items{
+ .collection__s2__items{
     gap:10px;
  }
- #collection__s2__items__shirts img{
+ .collection__s2__items__shirts img{
     width:75px;
  }  
- #collection__s2__items__shirts h1{
+ .collection__s2__items__shirts h1{
     font-size: 8px;
     padding-top: 2px;
     line-height: 15px;
  } 
- #collection__s2__items__shirts p{
+ .collection__s2__items__shirts p{
     font-size: 8px;
     padding-top: 2px;
     line-height: 15px;
@@ -500,18 +500,18 @@ body{
  #collection__s2__seachbar{
    padding:3px;
  }
- #collection__s2__items{
+ .collection__s2__items{
     gap:15px;
  }
- #collection__s2__items__shirts img{
+ .collection__s2__items__shirts img{
     width:170px;
  }  
- #collection__s2__items__shirts h1{
+ .collection__s2__items__shirts h1{
     font-size: 14px;
     padding-top: 2px;
     line-height: 15px;
  } 
- #collection__s2__items__shirts p{
+ .collection__s2__items__shirts p{
     font-size: 12px;
     padding-top: 2px;
     line-height: 15px;

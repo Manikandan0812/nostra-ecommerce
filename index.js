@@ -20,4 +20,15 @@ close.addEventListener("click",function(){
 //slide window
 
 
+//collections
+var search=document.getElementById("search__collections")
+var collection=document.querySelector(".collection__s2__items")
+var collectionList=collection.querySelectorAll(".collection__s2__items__shirts");
+
+
+search.addEventListener("keyup",function(event){
+    var enterdValue=event.target.value.toUpperCase();
+
+})
+
 
